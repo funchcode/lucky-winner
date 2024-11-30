@@ -181,7 +181,8 @@ nav.link a {
 }
 
 @media (max-width: 600px) {
-  .page {
+  section.event h1 {
+    font-size: 2.2rem;
   }
 
   .main {
