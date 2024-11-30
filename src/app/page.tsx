@@ -4,13 +4,13 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <header>
-        <div>
+      <header className={styles.header}>
+        <div className={styles.title}>
           체리오네일
         </div>
       </header>
       <main className={styles.main}>
-        <section>
+        <section className={styles.event}>
           <h1>이달의 리뷰어 이벤트</h1>
           <div>
             <p>정성으로 작성해주시는 리뷰글을 직접 확인하고 매월 한 분을 선정하여 다음 번 시술 50% 할인 이벤트를 진행하고 있습니다.</p>
