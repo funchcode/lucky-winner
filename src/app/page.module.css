@@ -58,10 +58,47 @@ header.header {
 
 section.event {
   height: 200px;
+  padding: 40px 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section.event h1 {
+  font-family: var(--font-cafe24);
+  color: var(--lucky-sub-rgb);
+  font-size: 40px;
+}
+
+div.event-description {
+  padding: 10px;
+  width: 380px;
+}
+
+div.event-description p {
+  color: white;
+  text-align: center;
+}
+
+div.event-description p b {
+  font-size: 1.1em;
+}
+
+div.event-description p u {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+div.event-description p.event-warning {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #D8BFD8;
+}
+
+div.the-hall-of-fame {
+  height: 300px;
 }
 
 @media (prefers-color-scheme: dark) {

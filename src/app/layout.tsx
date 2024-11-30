@@ -20,6 +20,10 @@ const yonePick = localFont({
   src: '../fonts/YOnepick/YOnepick-Regular.woff',
   variable: '--font-yonepick',
 });
+const cafe24Classic = localFont({
+  src: '../fonts/Cafe24/Cafe24Classictype-v1.1.woff2',
+  variable: '--font-cafe24',
+});
 
 export const metadata: Metadata = {
   title: "이달의 리뷰어 | 체리오네일",
@@ -33,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${yonePickBold.variable} ${yonePick.variable}`}>
+      <body className={`${yonePickBold.variable} ${yonePick.variable} ${cafe24Classic.variable}`}>
         {children}
       </body>
     </html>

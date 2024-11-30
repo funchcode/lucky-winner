@@ -12,11 +12,11 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.event}>
           <h1>이달의 리뷰어 이벤트</h1>
-          <div>
-            <p>정성으로 작성해주시는 리뷰글을 직접 확인하고 매월 한 분을 선정하여 다음 번 시술 50% 할인 이벤트를 진행하고 있습니다.</p>
-            <p>* 이벤트는 별도의 공지없이 내용이 변경 또는 종료될 수 있습니다.</p>
+          <div className={styles['event-description']}>
+            <p>매달 <b>베스트리뷰어</b>를 직접 선정하여 다음<br/>젤시술 <u>50% 할인</u>을 적용해드립니다</p>
+            <p className={styles['event-warning']}>이벤트는 별도의 공지없이 내용이 변경 또는 종료될 수 있습니다.</p>
           </div>
-          <div>
+          <div className={styles['the-hall-of-fame']}>
             <button>진행 중인 이벤트 보기</button>
           </div>
         </section>
