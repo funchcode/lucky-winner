@@ -71,7 +71,7 @@ section.event {
 section.event h1 {
   font-family: var(--font-cafe24);
   color: var(--lucky-sub-rgb);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 div.event-description {
@@ -143,6 +143,7 @@ section.the-hall-of-fame article.introduce > div {
 }
 nav.link {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 nav.link a {
   margin: 0 7px;
