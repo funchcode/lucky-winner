@@ -16,49 +16,34 @@ export default function Home() {
             <p>매달 <b>베스트리뷰어</b>를 직접 선정하여 다음<br/>젤시술 <u>50% 할인</u>을 적용해드립니다</p>
             <p className={styles['event-warning']}>이벤트는 별도의 공지없이 내용이 변경 또는 종료될 수 있습니다.</p>
           </div>
-          <div className={styles['the-hall-of-fame']}>
+          {/* <div>
             <button>진행 중인 이벤트 보기</button>
-          </div>
+          </div> */}
         </section>
-        <section>
-          <article>
+        <section className={styles['the-hall-of-fame']}>
+          <h1>체리오 <b>Pick</b> 리뷰</h1>
+          <article className={styles['introduce']}>
             <div>
-              <h2>10월 리뷰어</h2>
+              <Image
+                src={'/images/cute-rabbit.jpg'}
+                height={120}
+                width={120}
+                alt="cherryo"
+              />
+              <h2>11월, 12월 리뷰어 진행 중</h2>
+              <p>관리 받은 후 마음에 드셨다면 사진과 함께 리뷰를 남겨주세요!</p>
             </div>
-            <div>
-              <em>김*희 님</em>
-              <div>
-                <i>네이버 블로그</i>
-                <pre>이리 저리 주저리 주저리. 와우 어쩌고 저쩌고... 블라블라 ...</pre>
-                <a href="http://localhost:3000">바로가기</a>
-              </div>
-            </div>
-          </article>
-          <article>
-            <div>
-              <h1>11월 리뷰어</h1>
-              <h2>당첨자 발표</h2>
-            </div>
-            <div>
-              <em>정*환 님</em>
-              <div>
-                <i>영수증 리뷰</i>
-                <pre>주저리 주저리 합니다. *^^* 너무 예뻐요. 주저리 주저리 주저리~~!</pre>
-              </div>
-            </div>
-          </article>
-          <article>
-            <div></div>
           </article>
         </section>
         <section>
           <article></article>
         </section>
       </main>
-      <nav>
-        <span>인스타그램</span>
-        <span>네이버블로그</span>
-        <span>유튜브</span>
+      <nav className={styles['link']}>
+        <a href="https://m.place.naver.com/nailshop/1310284813/home">네이버예약</a>
+        <a href="https://www.instagram.com/cherry.o.nail">인스타그램</a>
+        <a href="https://blog.naver.com/cherryonail">네이버블로그</a>
+        <a href="https://www.youtube.com/@cherryOnail/shorts">유튜브</a>
       </nav>
       <footer className={styles.footer}>
       </footer>

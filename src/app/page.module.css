@@ -38,6 +38,10 @@ header.header {
   font-family: var(--font-yonepick-bold);
 }
 
+main.main {
+  width: 100%;
+}
+
 .neon {
   animation: neon 2s linear infinite;
   -moz-animation: neon 2s linear infinite;
@@ -57,7 +61,6 @@ header.header {
 }
 
 section.event {
-  height: 200px;
   padding: 40px 0;
 
   display: flex;
@@ -92,13 +95,59 @@ div.event-description p u {
 }
 
 div.event-description p.event-warning {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 0.8em;
   color: #D8BFD8;
 }
 
-div.the-hall-of-fame {
-  height: 300px;
+section.the-hall-of-fame {
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.the-hall-of-fame h1 {
+  color: var(--lucky-sub-rgb);
+  
+  font-family: var(--font-cafe24);
+}
+
+section.the-hall-of-fame h1 b {
+  color: var(--lucky-main-rgb);
+  font-size: 1.4em;
+}
+
+section.the-hall-of-fame article.introduce h2 {
+  margin-top: 5px;
+  text-align: center;
+  color: #FFD663;
+  font-size: 1.2em;
+  font-family: var(--font-yonepick-bold);
+}
+
+section.the-hall-of-fame article.introduce p {
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  font-family: var(--font-yonepick);
+}
+
+section.the-hall-of-fame article.introduce > div {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav.link {
+  margin-top: 20px;
+}
+nav.link a {
+  margin: 0 7px;
+  color: var(--lucky-sub-rgb);
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
